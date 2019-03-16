@@ -14,16 +14,46 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-<!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" href="style.css" />
+<script type="text/javascript">
+$(window).on("scroll", function() {
+if($(window).scrollTop() > 1) {
+  $(".header").addClass("active");
+  $(".header_text").addClass("active");
+} else {
+ $(".header").removeClass("active");
+ $(".header_text").removeClass("active");
+}
+});
+</script>
 <title>Arduino projekts</title>
 </head>
 <body>
-    <div id="block">
-        <div id="header">
-            <div id="header_text">O Arduino</div>
-            <div id="header_text">Projekty</div>
-            <div id="header_text">O Arduino</div>
+    <div class="container">
+      <div class="header">
+          <div class="header_text"><img scr="/img/arduino_logo.png" alt="Arduino logo"></div>
+          <div class="header_text">O Arduino</div>
+          <div class="header_text">Projekty</div>
+      </div>
+        <div class="left">
+          <H1>Arduino</h1>
+              Arduino nie trzeba nikomu przedstawiać. Znane i lubiane układy wraz z modułami i akcesoriami.
+          Arduino to prosty komputer, jednak jego możliwości są ogromne, a dodatkowe akcesoria i rozszerzenia pozwalają
+          zwiększyć jego funkcjonalność. Za jego pomocą można samodzielnie stworzyć np.
+          domową stację meteorologiczną czy też sterownik do obsługi rolet w oknach.
+        </div>
+        <div class="right">
+        </div>
+        <div class="left">
+
+        </div>
+        <div class="right">
+          <H1>Arduino</h1>
+              Arduino nie trzeba nikomu przedstawiać. Znane i lubiane układy wraz z modułami i akcesoriami.
+          Arduino to prosty komputer, jednak jego możliwości są ogromne, a dodatkowe akcesoria i rozszerzenia pozwalają
+          zwiększyć jego funkcjonalność. Za jego pomocą można samodzielnie stworzyć np.
+          domową stację meteorologiczną czy też sterownik do obsługi rolet w oknach.
         </div>
     </div>
 </body>
